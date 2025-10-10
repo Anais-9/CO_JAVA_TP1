@@ -33,6 +33,7 @@ public class Humains {
 		return this.nom;
 	}
 	
+	
 	public void gagnerArgent(int n) {
 		this.argent+=n;
 	}
