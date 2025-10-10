@@ -18,4 +18,26 @@ public class Yakuzas extends Humains {
 		return this.reputation;
 	}
 	
+	public void extorquer(Commercants c) {
+		int gagnerArgent;
+		gagnerArgent = c.seFaireExtroquer();
+		this.gagnerArgent(gagnerArgent);
+		this.reputation+=1;
+		this.parler("Je viens d'extorquer un commercant");
+	}
+	
+	public void gagnerDuel() {
+		this.reputation+=1;
+		this.parler("J'ai gagné le duel !");
+	}
+	
+	public void perdreDuel() {
+		this.perdreArgent(this.getArgent());
+		this.reputation-=1;
+		this.parler("J'ai perdu le duel...");
+	}
 }
+
+
+
+
