@@ -12,7 +12,7 @@ public class Yakuzas extends Humains {
 	}
 	
 	public String getClan() {
-		return this.getClan();
+		return this.Clan;
 	}
 	public int getReputation() {
 		return this.reputation;
