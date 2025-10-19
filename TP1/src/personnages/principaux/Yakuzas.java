@@ -36,6 +36,13 @@ public class Yakuzas extends Humains {
 		this.reputation-=1;
 		this.parler("J'ai perdu le duel...");
 	}
+	
+	@Override
+	public void direBonjour() {
+		String message="Bonjour ! Je m'appelle "+ this.getNom() +" et j'aime boire du "+this.getBoisson()+". J'appartiens au clan "+this.Clan+"!!!";
+		this.parler(message);
+	}
+	
 }
 
 

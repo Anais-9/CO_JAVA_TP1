@@ -16,17 +16,19 @@ public class Humains {
 	}
 	
 	public void direBonjour() {
-		this.parler("Bonjour ! Je m'appelle "+ this.nom +" et j'aime boire du "+this.boisson);
+		String message ="Bonjour ! Je m'appelle "+ this.nom +" et j'aime boire du "+this.boisson+".";
+		this.parler(message);
 	}
 	
 	public void boire() {
-		this.parler("Mmmm, un bon verre de "+this.boisson+" ! GLOUPS !");
+		String message = "Mmmm, un bon verre de "+this.boisson+" ! GLOUPS !";
+		this.parler(message);
 	}
 	
 	public int getArgent() {
 		return this.argent;
 	}
-	public String getBoissson() {
+	public String getBoisson() {
 		return this.boisson;
 	}
 	public String getNom() {
