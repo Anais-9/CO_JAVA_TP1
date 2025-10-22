@@ -16,7 +16,7 @@ public class Humains {
 	}
 	
 	public void direBonjour() {
-		String message ="Bonjour ! Je m'appelle "+ this.nom +" et j'aime boire du "+this.boisson+".";
+		String message ="Bonjour ! Je m'appelle "+ this.nom +" et j'aime boire du "+this.boisson+" et j'ai "+this.argent+" sous en poche.";
 		this.parler(message);
 	}
 	

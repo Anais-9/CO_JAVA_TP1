@@ -10,14 +10,17 @@ public class Ronins extends Humains{
 	}
 	
 	public void donner(int n, Commercants c) {
+		String msg = "Tiens Marchant voilà "+n+" sous.";
+		this.parler(msg);
 		c.recevoir(n);
+		this.perdreArgent(n);
 	}
 	
 	public void provoquer(Yakuzas y) {
 		if(this.honneur*2>y.getReputation()) {
-			this.gagnerArgent(y.getArgent());
 			this.honneur++;
-			y.perdreDuel();
+			int gagnerArgent =y.perdreDuel();
+			this.gagnerArgent(gagnerArgent);
 			this.parler("J'ai gagné le Duel!");
 		}
 		else {

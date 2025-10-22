@@ -31,15 +31,19 @@ public class Yakuzas extends Humains {
 		this.parler("J'ai gagné le duel !");
 	}
 	
-	public void perdreDuel() {
-		this.perdreArgent(this.getArgent());
+	public int perdreDuel() {
+		int argentPerdue = this.getArgent();
+		String msg="J'ai perdu le duel et mes "+argentPerdue+" sous...";
+		this.parler(msg);
+		this.perdreArgent(argentPerdue);
 		this.reputation-=1;
-		this.parler("J'ai perdu le duel...");
+		return argentPerdue;
 	}
 	
 	@Override
 	public void direBonjour() {
-		String message="Bonjour ! Je m'appelle "+ this.getNom() +" et j'aime boire du "+this.getBoisson()+". J'appartiens au clan "+this.Clan+"!!!";
+		super.direBonjour();
+		String message="J'appartiens au clan "+this.Clan+".";
 		this.parler(message);
 	}
 	

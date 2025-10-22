@@ -1,5 +1,6 @@
 package personnages.principaux;
 import personnages.Humains;
+
 public class Commercants extends Humains {
 	
 	public Commercants(String nom, int argent) {
@@ -8,8 +9,8 @@ public class Commercants extends Humains {
 	
 	public int seFaireExtroquer() {
 		int totalArgent = this.getArgent();
-		this.perdreArgent(this.getArgent());
-		String texte = "Ouin Ouin, le monde est trop injuste";
+		this.perdreArgent(totalArgent);
+		String texte = "J'ai tout perdu! le monde est trop injuste";
 		this.parler(texte);
 		return totalArgent;
 				
@@ -17,7 +18,7 @@ public class Commercants extends Humains {
 	
 	public void recevoir(int n) {
 		this.gagnerArgent(n);
-		String texte = "Merci";
-		this.parler(texte);
+		String msg = "Merci";
+		this.parler(msg);
 	}
 }

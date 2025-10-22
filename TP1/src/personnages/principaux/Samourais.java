@@ -11,8 +11,9 @@ public class Samourais extends Ronins{
 	
 	@Override
 	public void direBonjour() {
-		String message="Bonjour ! Je m'appelle "+ this.getNom() +" et j'aime boire du "+this.getBoisson()+". Je sers le seigneur: "+this.seigneur+".";
-		this.parler(message);
+		super.direBonjour();
+		String msg ="Je sers le seigneur: "+this.seigneur+".";
+		this.parler(msg);
 	}
 	
 	public void boire(String boisson) {
