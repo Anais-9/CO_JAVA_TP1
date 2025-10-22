@@ -2,7 +2,7 @@ package personnages.secondaires;
 import personnages.*;
 import personnages.principaux.*;
 public class Traitres extends Samourais{
-	int traitrise;
+	private float traitrise;
 	
 	public Traitres(String nom, int argent, String boisson, String seigneur) {
 		super(nom,argent,boisson,seigneur);
@@ -34,7 +34,7 @@ public class Traitres extends Samourais{
 		h.gagnerArgent(argent);
 		this.perdreArgent(argent);
 		
-		int diminue = (this.traitrise * 10) /100;
+		float diminue = this.traitrise /10;
 		if (this.traitrise - diminue <0) {
 			this.traitrise-=this.traitrise;
 		}

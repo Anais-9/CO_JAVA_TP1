@@ -2,7 +2,7 @@ package personnages.principaux;
 import personnages.Humains;
 
 public class Samourais extends Ronins{
-	String seigneur;
+	private String seigneur;
 	
 	public Samourais(String nom, int argent, String boisson, String seigneur) {
 		super(nom,argent,boisson);
