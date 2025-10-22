@@ -36,5 +36,12 @@ public class MonHistoire {
 		y.extorquer(commercant);
 		
 		ronin.provoquer(y);
+		
+		Samourais s = new Samourais("Samourais", 100, "Soda", "S");
+		s.boire("thé");
+		s.boire();
+		s.direBonjour();
+		s.donner(20, commercant);
+		s.provoquer(y);
 	}
 }
