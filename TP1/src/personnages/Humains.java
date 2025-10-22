@@ -12,7 +12,7 @@ public class Humains {
 	}
 	
 	public void parler (String texte) {
-		System.out.println("( "+this.nom+" )"+" - "+texte);
+		System.out.println("( "+this.nom+" )"+" - "+texte+"\n");
 	}
 	
 	public void direBonjour() {
