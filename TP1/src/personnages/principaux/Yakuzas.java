@@ -23,7 +23,8 @@ public class Yakuzas extends Humains {
 		gagnerArgent = c.seFaireExtroquer();
 		this.gagnerArgent(gagnerArgent);
 		this.reputation+=1;
-		this.parler("Je viens d'extorquer un commercant");
+		String msg = "Je viens d'extorquer un commercant";
+		this.parler(msg);
 	}
 	
 	public void gagnerDuel() {
