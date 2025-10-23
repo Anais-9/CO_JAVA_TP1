@@ -66,5 +66,10 @@ public class MonHistoire {
 		C1.direBonjour();
 		y.extorquer(C1);
 		C1.direBonjour();
+		
+		Ninjas n = new Ninjas("Ninja",10,"Soda","Clan");
+		n.direBonjour();
+		n.extorquer(C1);
+		n.direBonjour();
 	}
 }
