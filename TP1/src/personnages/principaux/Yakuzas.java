@@ -30,6 +30,7 @@ public class Yakuzas extends Humains {
 	public void gagnerDuel() {
 		this.reputation+=1;
 		this.parler("J'ai gagné le duel !");
+		
 	}
 	
 	public int perdreDuel() {
