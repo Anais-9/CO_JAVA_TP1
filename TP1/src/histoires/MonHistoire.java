@@ -5,9 +5,9 @@ import personnages.secondaires.*;
 
 public class MonHistoire {
 	public static void main(String[] agr) {
-		Humains humain = new Humains("Prof", 10, "Porto");
-		humain.direBonjour();
-		humain.boire();
+		//Humains humain = new Humains("Prof", 10, "Porto");
+		//humain.direBonjour();
+		//humain.boire();
 		
 		Commercants commercant = new Commercants("Marchand",35);
 		commercant.direBonjour();

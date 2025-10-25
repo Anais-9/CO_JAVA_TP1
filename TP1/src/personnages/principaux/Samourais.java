@@ -23,17 +23,4 @@ public class Samourais extends Ronins{
 
 }
 
-class Test{
-	public static void main(String[] args) {
-		Samourais s = new Samourais("Akimoto",20,"the","Miyamoto");
-		s.direBonjour();
-		s.boire();
-		s.boire("café");
-		int argent = s.getArgent();
-		System.out.println(argent);
-		s.gagnerArgent(2);
-		argent =s.getArgent();
-		System.out.println(argent);
 
-	}
-}
