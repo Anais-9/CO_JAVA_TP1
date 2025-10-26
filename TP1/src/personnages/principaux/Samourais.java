@@ -1,7 +1,7 @@
 package personnages.principaux;
-import personnages.Humains;
+import personnages.*;
 
-public class Samourais extends Ronins{
+public class Samourais extends Ronins implements IGuerrier{
 	private String seigneur;
 	
 	public Samourais(String nom, int argent, String boisson, String seigneur) {
@@ -19,6 +19,13 @@ public class Samourais extends Ronins{
 	public void boire(String boisson) {
 		String message = "Mmmm, un bon verre de "+boisson+" ! GLOUPS !";
 		this.parler(message);
+	}
+	
+	@Override
+	public void combattre(Humains h) {
+		if (h instanceof Yakuzas) {
+			this.provoquer(((Yakuzas)h));
+		}
 	}
 
 }

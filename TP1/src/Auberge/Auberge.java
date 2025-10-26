@@ -1,5 +1,7 @@
 package Auberge;
 import personnages.*;
+import personnages.principaux.*;
+import personnages.secondaires.*;
 
 
 public class Auberge {
@@ -17,7 +19,7 @@ public class Auberge {
 			if (clients[max] == null) {
 				clients[max] = h;
 				h.direBonjour();
-				for(Humains personne:clients) {
+				for(Humains personne: clients) {
 					if (personne != null) {
 						personne.direBonjour();
 					}
@@ -31,9 +33,28 @@ public class Auberge {
 	}
 	
 	public void payerLaTournee(Humains h) {
+		h.perdreArgent(5);
+		for (Humains personne: clients) {
+			if (personne != null) {
+				personne.boire();
+			}
+		}
 	}
 	
 	public void fight() {
-		
+		for (Humains personne: clients) {
+			if(personne instanceof Traitres ) {
+				((Traitres)personne).fuir();;
+			}
+			else if(personne instanceof Commercants ) {
+				((Commercants)personne).fuir();;
+			}
+			//else if(personne instanceof Samourais ) {
+				//((Samourais)personne).combattre();;
+			//}
+			//else if(personne instanceof Yakuzas ) {
+				//((Yakuzas)personne).combattre();;
+			//}
+		}
 	}
 }

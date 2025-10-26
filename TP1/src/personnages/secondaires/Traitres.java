@@ -1,7 +1,7 @@
 package personnages.secondaires;
 import personnages.*;
 import personnages.principaux.*;
-public class Traitres extends Samourais{
+public class Traitres extends Samourais implements IPleutre{
 	private float traitrise;
 	
 	public Traitres(String nom, int argent, String boisson, String seigneur) {
@@ -44,6 +44,11 @@ public class Traitres extends Samourais{
 		
 		String msg = "Je fais amis-amis";
 		this.parler(msg);
+		
+	}
+	
+	@Override
+	public void fuir() {
 		
 	}
 }

@@ -1,7 +1,7 @@
 package personnages.principaux;
-import personnages.Humains;
+import personnages.*;
 
-public class Yakuzas extends Humains {
+public class Yakuzas extends Humains implements IGuerrier{
 	private String Clan;
 	private int reputation;
 	
@@ -47,6 +47,13 @@ public class Yakuzas extends Humains {
 		super.direBonjour();
 		String message="J'appartiens au clan "+this.Clan+".";
 		this.parler(message);
+	}
+	
+	@Override
+	public void combattre(Humains h) {
+		//if (h instanceof Samourais) {
+			//this.(((Samourais)h));
+		//}
 	}
 	
 }

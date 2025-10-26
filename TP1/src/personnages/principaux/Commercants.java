@@ -1,7 +1,7 @@
 package personnages.principaux;
-import personnages.Humains;
+import personnages.*;
 
-public class Commercants extends Humains {
+public class Commercants extends Humains implements IPleutre{
 	
 	public Commercants(String nom, int argent) {
 		super(nom, argent, "thé");
@@ -20,5 +20,10 @@ public class Commercants extends Humains {
 		this.gagnerArgent(n);
 		String msg = "Merci";
 		this.parler(msg);
+	}
+	
+	@Override
+	public void fuir() {
+		
 	}
 }
